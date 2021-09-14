@@ -17,7 +17,8 @@ namespace HandlingAlerts.Base
         {
 
             driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("start-maximized");
             driver.Url = "http://the-internet.herokuapp.com/javascript_alerts";
         }
 
