@@ -6,17 +6,15 @@
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-
-
 namespace HandlingAlerts.Alert
 {
-    public class Alertclass 
+    public class Alertclass
     {
         public Alertclass(IWebDriver driver)
         {
             PageFactory.InitElements(driver, this);
         }
-        
+
         [FindsBy(How = How.CssSelector, Using = "button[onclick='jsAlert()']")]
         [CacheLookup]
         public IWebElement alertBtn;

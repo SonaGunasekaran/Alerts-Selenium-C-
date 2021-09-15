@@ -1,12 +1,13 @@
-﻿using HandlingAlerts.Alert;
+﻿/*
+ * Project:Handling Alerts using selenium
+ * Author:Sona G
+ * Date :14/09/2021
+ */
+using HandlingAlerts.Alert;
 using HandlingAlerts.Confirm;
 using HandlingAlerts.Dismiss;
 using HandlingAlerts.Prompt;
-using NUnit.Framework;
-using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HandlingAlerts.DoAction
 {
@@ -23,9 +24,9 @@ namespace HandlingAlerts.DoAction
             var alert_win = driver.SwitchTo().Alert();
             //Accept the alert
             alert_win.Accept();
-            
+
             System.Threading.Thread.Sleep(2000);
-            
+
             Console.WriteLine(alert.clickResult.Text);
             System.Threading.Thread.Sleep(2000);
 
@@ -89,7 +90,6 @@ namespace HandlingAlerts.DoAction
             alert_win.Accept();
             System.Threading.Thread.Sleep(2000);
 
-           
             Console.WriteLine(prompt.clickResult.Text);
             System.Threading.Thread.Sleep(2000);
 
@@ -99,6 +99,5 @@ namespace HandlingAlerts.DoAction
             }
         }
     }
-
 }
 

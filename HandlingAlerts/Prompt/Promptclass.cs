@@ -1,4 +1,9 @@
-﻿using OpenQA.Selenium;
+﻿/*
+ * Project:Handling Alerts using selenium
+ * Author:Sona G
+ * Date :14/09/2021
+ */
+using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
 namespace HandlingAlerts.Prompt
