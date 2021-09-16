@@ -11,25 +11,25 @@ namespace HandlingAlerts
     {
 
         [Test, Order(1)]
-        public void test_alert()
+        public void Test_alert()
         {
             DoAction.DoActions.TestAcceptAlert();
         }
 
         [Test, Order(2)]
-        public void test_confirm()
+        public void Test_confirm()
         {
             DoAction.DoActions.TestConfirmAlert();
         }
 
         [Test, Order(3)]
-        public void test_dismiss()
+        public void Test_dismiss()
         {
             DoAction.DoActions.TestDismissAlert();
         }
 
         [Test, Order(4)]
-        public void test_sendalert_text()
+        public void Test_sendalert_text()
         {
             DoAction.DoActions.TestSendAlertText();
         }
